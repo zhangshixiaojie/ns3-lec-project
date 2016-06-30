@@ -16,11 +16,11 @@ wireshark查看文件
 pyviz安装步骤：
 1. 安装依赖包：sudo apt-get install python-dev python-pygraphviz python-kiwi python-pygoocanvas python-gnome2 python-gnomedesktop   
    python-rsvg​（我的ubuntu没有找到gnomedesktop和rsvg这个安装包，所以我只安装了gnome2）
-2. ./waf -d optimized --enable-examples --enable-tests configure(优化编译，会禁logging日志)
-3. ./waf -d debug --enable-examples --enable-tests configure(开启调试编译)
-4. 在网上下载pyviz的安装包，解压放在ns-3.22/ns-3.22下
-5. cd ns-3.22/ns-3.22
-6. ./waf clean
+2. 在网上下载pyviz的安装包，解压放在ns-3.22/ns-3.22下
+3. cd ns-3.22/ns-3.22
+4. ./waf clean (重新编译，慎点)
+5. ./waf -d optimized --enable-examples --enable-tests configure (优化编译，会禁logging日志)
+6. ./waf -d debug --enable-examples --enable-tests configure (开启调试编译)
 7. ./waf build
 
 wireshark安装步骤：
